@@ -1,3 +1,6 @@
+# Description:
+# This script merges multiple AutopilotHWID.csv files into one and also adds the specified Group Tag at the end of each line. It helps to make uploading new Autopilot device more convenient.
+
 # Variables
 $groupTag = "<insert Group Tag here>"  # Replace with the actual group tag
 $csvDirectory = "<insert path to CSV files here>"  # Replace with the actual path to the directory containing CSV files
@@ -35,3 +38,4 @@ if ($mergedData.Count -gt 0) {
 } else {
     Write-Host "No CSV files found in the specified directory."
 }
+
